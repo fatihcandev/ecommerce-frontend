@@ -3,7 +3,7 @@ export interface Product {
   name: string;
   price: number;
   description: string;
-  image: string;
+  images: string[];
   imageAlt: string;
 }
 
@@ -15,4 +15,12 @@ export interface Comment {
 
 export interface CartItem extends Product {
   quantity: number;
+  size: ClothingSize;
+}
+
+export enum ClothingSize {
+  S = 'SMALL',
+  M = 'MEDIUM',
+  L = 'LARGE',
+  XL = 'X-LARGE',
 }

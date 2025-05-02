@@ -1,14 +1,15 @@
-import { CartItem, Product } from '@/types';
+import { CartItem } from '@/types';
 import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 interface CartStore {
   items: CartItem[];
-  addItem: (item: Product) => void;
+  addItem: (item: CartItem) => void;
   removeItem: (id: number) => void;
   updateQuantity: (id: number, quantity: number) => void;
   clearCart: () => void;
   getTotal: () => number;
+  getIsItemInCart: (id: number) => boolean;
 }
 
 export const useCartStore = create(
@@ -26,7 +27,7 @@ export const useCartStore = create(
               ),
             };
           }
-          return { items: [...state.items, { ...item, quantity: 1 }] };
+          return { items: [...state.items, item] };
         });
       },
 
@@ -60,6 +61,8 @@ export const useCartStore = create(
           0,
         );
       },
+      getIsItemInCart: (id: number) =>
+        get().items.some((item) => item.id === id),
     }),
     { name: 'cart' },
   ),

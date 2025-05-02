@@ -11,9 +11,9 @@ const Customers = () => {
         OUR HAPPY CUSTOMERS
       </span>
       <div className="md:hidden">
-        <Swiper slidesPerView={1.1} spaceBetween={16}>
+        <Swiper slidesPerView={1.1}>
           {comments.map((comment) => (
-            <SwiperSlide key={comment.id} className="first:pl-4 last:pr-4">
+            <SwiperSlide key={comment.id} className="px-4">
               <CommentCard comment={comment} />
             </SwiperSlide>
           ))}

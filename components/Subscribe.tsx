@@ -8,17 +8,15 @@ const Subscribe = () => {
       <p className="text-center text-4xl font-extrabold text-white md:mr-auto md:max-w-[450px] md:text-left">
         STAY UP TO DATE ABOUT OUR LATEST OFFERS
       </p>
-      <div className="flex w-full max-w-[300px] flex-col gap-2">
-        <div className="relative flex items-center rounded-full bg-white py-2 pl-4">
+      <div className="flex w-full flex-col gap-2 md:max-w-[300px]">
+        <div className="relative flex items-center rounded-md bg-white py-2 pl-4">
           <MailIcon className="absolute top-1/2 size-4 -translate-y-1/2 text-gray-500" />
           <input
             className="w-full border-0 pl-8 placeholder:text-gray-400 focus:outline-0"
             placeholder="Enter your email address"
           />
         </div>
-        <Button variant="secondary" className="rounded-full">
-          Subscribe
-        </Button>
+        <Button variant="secondary">Subscribe</Button>
       </div>
     </div>
   );

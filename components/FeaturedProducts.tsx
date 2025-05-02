@@ -17,9 +17,9 @@ const FeaturedProducts = ({ title, products }: FeaturedProductsProps) => {
         {title}
       </span>
       <div className="md:hidden">
-        <Swiper slidesPerView={1.25} spaceBetween={16}>
+        <Swiper slidesPerView={1.25}>
           {products.map((product) => (
-            <SwiperSlide key={product.id} className="first:pl-4 last:pr-4">
+            <SwiperSlide key={product.id} className="px-4">
               <ProductCard product={product} />
             </SwiperSlide>
           ))}

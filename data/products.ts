@@ -7,7 +7,7 @@ export const products: Product[] = [
     description:
       'A casual short-sleeve T-shirt featuring bold horizontal black and beige stripes, perfect for a modern minimalist look.',
     price: 29.99,
-    image: '/tshirt3.jpg',
+    images: ['/tshirt3.jpg'],
     imageAlt: 'Black and beige striped short-sleeve T-shirt',
   },
   {
@@ -16,7 +16,7 @@ export const products: Product[] = [
     description:
       'Stylish chunky sneakers with a white and black color scheme, featuring a thick sole and white laces for a trendy streetwear vibe.',
     price: 59.99,
-    image: '/sneakers.jpg',
+    images: ['/sneakers.jpg'],
     imageAlt: 'White and black chunky sneakers with white laces',
   },
   {
@@ -25,7 +25,7 @@ export const products: Product[] = [
     description:
       'Sleek black slim-fit trousers with a clean design, ideal for both casual and semi-formal occasions.',
     price: 49.99,
-    image: '/trousers.jpg',
+    images: ['/trousers.jpg'],
     imageAlt: 'Black slim-fit trousers',
   },
   {
@@ -34,7 +34,7 @@ export const products: Product[] = [
     description:
       'Classic light blue high-waisted jeans with a relaxed fit, perfect for everyday wear.',
     price: 54.99,
-    image: '/jeans.jpg',
+    images: ['/jeans.jpg'],
     imageAlt: 'Light blue high-waisted jeans',
   },
   {
@@ -43,7 +43,7 @@ export const products: Product[] = [
     description:
       'A navy blue short-sleeve polo shirt with a textured vertical pattern, offering a refined casual style.',
     price: 39.99,
-    image: '/polo-tshirt2.jpg',
+    images: ['/polo-tshirt2.jpg'],
     imageAlt: 'Navy blue textured polo shirt',
   },
   {
@@ -52,7 +52,7 @@ export const products: Product[] = [
     description:
       'A simple cream T-shirt with black trim on the collar and sleeves, great for a clean and casual look.',
     price: 24.99,
-    image: '/tshirt.jpg',
+    images: ['/tshirt.jpg', '/tshirt-back.jpg', '/tshirt-on-model.jpg'],
     imageAlt: 'Cream T-shirt with black trim',
   },
   {
@@ -61,7 +61,7 @@ export const products: Product[] = [
     description:
       'Light blue denim shorts with a high-waisted design, perfect for a relaxed summer outfit.',
     price: 34.99,
-    image: '/denim-shorts.jpg',
+    images: ['/denim-shorts.jpg'],
     imageAlt: 'Light blue denim shorts',
   },
   {
@@ -70,7 +70,7 @@ export const products: Product[] = [
     description:
       'A beige short-sleeve collared shirt with a relaxed fit, ideal for a sophisticated yet casual appearance.',
     price: 44.99,
-    image: '/polo-tshirt.jpg',
+    images: ['/polo-tshirt.jpg'],
     imageAlt: 'Beige collared shirt',
   },
 ];
